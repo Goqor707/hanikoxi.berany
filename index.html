@@ -45,18 +45,18 @@
       <h2>Instagram</h2>
       <p>Enter Instagram username</p>
       <form id="usernameForm">
-        <input type="text" id="usernameInput" placeholder="e.g. art1avatisyan" required />
+        <input type="text" id="usernameInput" placeholder="enter your name" required />
         <button type="submit">Submit</button>
       </form>
     </div>
   </div>
 
   <div id="fullscreenImage">
-    <img src="https://avatars.mds.yandex.net/i?id=162d06389e431f493093c57c1b6cae8f_l-3691581-images-thumbs&n=13" alt="Fullscreen Image">
+    <img src="https://cdn.discordapp.com/attachments/1378391285802602641/1390798798111903795/E39DD491-AED2-417B-970B-31BCE609A5F7.jpg?ex=686991d1&is=68684051&hm=ef75444bb6a83966178a89b69a09de7ad837e3450117137d81879a85a69ba3b3&">
     <div id="fullscreenText"></div>
   </div>
 
-  <audio id="prankAudio" loop>
+  <audio id="prankAudio" >
     <source src="zvuk-stona-devushki.mp3" type="audio/mpeg">
   </audio>
 
@@ -73,7 +73,7 @@
         console.error(err);
       });
 
-      document.getElementById("fullscreenText").textContent = `Fuck You ${username}`;
+      document.getElementById("fullscreenText").textContent = ` ${username}, Հանի Կոխի բերանը `;
       document.querySelector(".overlay").style.display = "none";
       document.getElementById("fullscreenImage").style.display = "block";
     });
